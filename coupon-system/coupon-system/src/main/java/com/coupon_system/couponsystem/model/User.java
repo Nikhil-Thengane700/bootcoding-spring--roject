@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 @Builder
-@Table(name = "app_user")
+@Table(name = "User_app")
 @Entity
 public class User {
     @Id
@@ -25,4 +27,6 @@ public class User {
     @Column(name = "phone")
     private long phone;
 
+    public User() {
+    }
 }

@@ -5,23 +5,23 @@ import lombok.Data;
 
 @Data
 @Builder
-@Table(name = "app_user")
+@Table(name = "Patient")
 @Entity
 public class User {
     @Id
     @GeneratedValue  // genrated value wii be puted in id
     private int id;
 
-    @Column(name = "first_name")
+    @Column(name = "patient_name")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "patient_address")
     private String lastName;
 
-    @Column(name =  "email_id")
+    @Column(name =  "patient_email")
     private String emailId;
 
-    @Column(name = "phone")
+    @Column(name = "patient_phone")
     private long phone;
 
 }

@@ -39,4 +39,6 @@ public class CouponService {
                 .type("COUPON")
                 .build();
         return coupon;
-}}
+}
+}
+

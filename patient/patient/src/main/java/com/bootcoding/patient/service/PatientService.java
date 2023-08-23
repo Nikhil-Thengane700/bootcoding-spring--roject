@@ -1,13 +1,14 @@
 package com.bootcoding.patient.service;
 
 import com.bootcoding.patient.model.Patient;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 
-
+@Service
 
     public class PatientService {
         public List<Patient> getPPatient(){
