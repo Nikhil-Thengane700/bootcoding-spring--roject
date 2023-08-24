@@ -27,6 +27,5 @@ public class User {
     @Column(name = "phone")
     private long phone;
 
-    public User() {
-    }
+
 }

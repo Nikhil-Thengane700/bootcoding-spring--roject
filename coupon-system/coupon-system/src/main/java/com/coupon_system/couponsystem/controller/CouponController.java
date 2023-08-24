@@ -13,7 +13,14 @@ import java.util.List;
 
 
 public class CouponController {
+
     @Autowired
+    private CouponService couponService;
+    @PostMapping("/couponDetails/{value}")
+    public List<Coupon> generateNewCoupon(@PathVariable int value ) {
+        return couponService.generateNewCoupon(value);
+
+   /* @Autowired
     private CouponService couponService;
 
     // 1. Get All Coupons
@@ -81,5 +88,6 @@ public class CouponController {
         int quantity = 10;
         return couponService.getNewCoupon(quantity);
     }
+    */
     // http://localhost:8082/app-name/coupon/getCoupon
-}
+}}

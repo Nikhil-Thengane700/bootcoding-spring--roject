@@ -15,44 +15,41 @@ import java.util.Date;
 @Table(name = "Coupon_app")
 @Entity
 public class Coupon {
-
-
         @Id
         @GeneratedValue
-
         private String id;
+
+        @Column(name =  "coupon_code")
+        private String couponCode;
+
         @Column(name = "valid_for")
         private int validFor;
 
-
         @Column(name = "title")
         private String title;
+        @Column(name = "description")
+        private String description;
+
 
         @Column(name = "type")
         private String type;
 
 
 
-        @Column(name = "description")
-        private String description;
-
-        @Column(name =  "coupon_code")
-        private String couponCode;
-
         @Column(name = "validity_date")
         private Date validityDate;
 
         @Column(name = "discount")
-        private String discount;
+        private int discount;
 
         @Column(name = "categeory")
-        private String categeory;
+        private String category;
 
         @Column(name = "created_date")
         private Date createdDate;
 
         @Column(name = "created_by")
-        private String createdby;
+        private String createdBy;
 
         @Column(name = "status")
         private String status;
