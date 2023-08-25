@@ -16,13 +16,12 @@ public class CouponController {
 
     @Autowired
     private CouponService couponService;
-    @PostMapping("/couponDetails/{value}")
+    @PostMapping("couponDetails/{value}")
     public List<Coupon> generateNewCoupon(@PathVariable int value ) {
         return couponService.generateNewCoupon(value);
 
-   /* @Autowired
-    private CouponService couponService;
 
+/*
     // 1. Get All Coupons
     @GetMapping("all-coupons")
     public List<String> getAllCoupons(){

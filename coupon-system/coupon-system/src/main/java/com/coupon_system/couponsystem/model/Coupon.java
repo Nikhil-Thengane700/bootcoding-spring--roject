@@ -17,7 +17,7 @@ import java.util.Date;
 public class Coupon {
         @Id
         @GeneratedValue
-        private String id;
+        private int id;
 
         @Column(name =  "coupon_code")
         private String couponCode;

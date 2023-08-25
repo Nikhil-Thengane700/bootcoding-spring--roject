@@ -6,13 +6,14 @@ import com.coupon_system.couponsystem.utill.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
-@Component
+@Service
 public class CouponService {
     @Autowired
     private CouponRepository couponRepository;
